@@ -1,0 +1,54 @@
+.super-container{
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap; /* To ensure containers wrap onto the next line */
+  justify-content: space-between; /* Distribute space evenly */
+}
+.container{
+  display: flex;
+  flex-direction: row; /* Align children (image and paragraph) horizontally */
+  width: 32%;
+  height: 30vh;
+  border: 2px solid rgb(220, 248, 84);
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between rows */
+  box-sizing: border-box; /* To ensure padding and border are included in width */
+}
+.sub-container{
+  width: 40%; /* Left side for the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 10px; /* Padding for inner spacing */
+  border: 2px solid rgb(146, 247, 152);
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.img-container{
+  width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  padding: 10px; /* Padding for inner spacing */
+  border: 2px solid rgb(146, 247, 152);
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.link-container{
+  margin-top: auto;
+}
+
+.para-container{
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  text-align: left;
+  max-height: 100%; /* Adjust to allow for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}

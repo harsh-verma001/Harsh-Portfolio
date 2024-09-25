@@ -1,0 +1,10 @@
+.main-content {
+  margin-left: 250px; /* Same as the sidebar width */
+  padding: 20px; /*Spacing inside the main content */
+}
+.super-container{
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap; /* To ensure containers wrap onto the next line */
+  justify-content: space-between; /* Distribute space evenly */
+}
