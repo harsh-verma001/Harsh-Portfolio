@@ -8,3 +8,15 @@
   flex-wrap: wrap; /* To ensure containers wrap onto the next line */
   justify-content: space-between; /* Distribute space evenly */
 }
+.frontEnd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.backEnd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

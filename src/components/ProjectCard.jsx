@@ -1,6 +1,6 @@
 // this is project card file
 import "./ProjectCard.css";
-function ProjectCard() {
+const ProjectCard = ({ imageUrl, text }) => {
   return (
     <>
       {/* <div class="super-container"> */}
@@ -8,7 +8,8 @@ function ProjectCard() {
         {/* <!-- <p>hi this is container</p> --> */}
         <div class="sub-container">
           <img
-            src="https://via.placeholder.com/50x50.png?text=H"
+            style={{ width: "4rem", height: "4rem" }}
+            src={imageUrl}
             alt="Cool H Symbol"
           />
           <div class="link-container">
@@ -28,16 +29,10 @@ function ProjectCard() {
             </button>
           </div>
         </div>
-        <div class="para-container">
-          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Sequi tempore nihil accusamus est
-          tenetur alias illum cupiditate amet, labore dolore facilis similique
-          odio pariatur magnam sapiente quas nesciunt corrupti animi.
-        </div>
+        <div class="para-container">{text}</div>
       </div>
-      {/* </div> */}
     </>
   );
-}
+};
 
 export default ProjectCard;

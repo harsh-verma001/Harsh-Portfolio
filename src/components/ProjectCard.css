@@ -8,12 +8,13 @@
   display: flex;
   flex-direction: row; /* Align children (image and paragraph) horizontally */
   width: 32%;
-  height: 30vh;
+  height: 22vh;
   border: 2px solid rgb(220, 248, 84);
   border-radius: 10px;
   margin-bottom: 20px; /* Space between rows */
   box-sizing: border-box; /* To ensure padding and border are included in width */
 }
+
 .sub-container{
   width: 40%; /* Left side for the image */
   display: flex;
@@ -27,16 +28,14 @@
 }
 
 .img-container{
-  width: max-content;
-  height: max-content;
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  padding: 10px; /* Padding for inner spacing */
-  border: 2px solid rgb(146, 247, 152);
-  border-radius: 10px;
-  margin: 10px 10px;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
 }
+
 .link-container{
   margin-top: auto;
 }

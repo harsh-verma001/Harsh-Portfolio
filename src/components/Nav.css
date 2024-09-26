@@ -1,6 +1,12 @@
+nav{
+  background-image: url(./thumbnail.avif);
+}
+.navbar{
+  height: 90px;
+}
 nav .navbar-image img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   padding: 2px;
 }
