@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import Education from "./components/Education";
 import "./App.css";
 
 function App() {
@@ -40,19 +41,19 @@ function App() {
 
   const frontEndSkills = [
     {
-      imageUrl: "../public/frontend/htmlcss.jpeg",
+      imageUrl: "frontend/htmlcss.jpeg",
       text: "HTML CSS",
     },
     {
-      imageUrl: "../public/frontend/bootstrap.jpeg",
+      imageUrl: "frontend/bootstrap.jpeg",
       text: "Bootstrap",
     },
     {
-      imageUrl: "../public/frontend/js.png",
+      imageUrl: "frontend/js.png",
       text: "JavaScript",
     },
     {
-      imageUrl: "../public/frontend/react.webp",
+      imageUrl: "frontend/react.webp",
       text: "React",
     },
   ];
@@ -76,12 +77,46 @@ function App() {
     },
   ];
 
+  const educationContent = [
+    {
+      heading: "MCA",
+      text: "AKGEC, Ghaziabad",
+      grades: "74.30%",
+      year: "2022-24",
+    },
+    {
+      heading: "B.Sc",
+      text: "K.D.College, Simbhaoli",
+      grades: "66.50%",
+      year: "2019-22",
+    },
+    {
+      heading: "Intermediate",
+      text: "K M LAL S V M I C Garh, Hapur",
+      grades: "74%",
+      year: "2019",
+    },
+  ];
+
   return (
     <>
       <Sidebar></Sidebar>
       {/* <div className="sidebar"></div> */}
       <div className="main-content">
         <Nav></Nav>
+        <h4 style={{ margin: "20px 0" }}>Education</h4>
+        <div className="education">
+          {educationContent.map((item, index) => (
+            <Education
+              key={index}
+              heading={item.heading}
+              text={item.text}
+              grades={item.grades}
+              year={item.year}
+            />
+          ))}
+        </div>
+
         <h4 style={{ margin: "20px 0" }}>Projects</h4>
         <div class="super-container">
           {ProjectCardContent.map((item, index) => (
