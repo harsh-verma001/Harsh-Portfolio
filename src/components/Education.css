@@ -1,4 +1,4 @@
-.edu-para-container{
+/* .edu-para-container{
   width: 30%;
   margin: 10px;
   padding: 10px;
@@ -6,14 +6,61 @@
   flex-direction: column;
   /* justify-content: center; Align to the top */
   /* align-items: center; */
-  text-align: left;
+  /* text-align: left;
   max-height: 100%; /* Adjust to allow for scrolling */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
-  overflow-x: hidden; /* Hide horizontal overflow */
-  border: 2px solid black;
+  /* overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  /* overflow-x: hidden; /* Hide horizontal overflow */
+  /* border: 2px solid black;
   border-radius: 10px;
 }
 
 .content{
   text-align: left;
+}  */
+
+
+/* Education.css */
+
+.edu-para-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-para-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.edu-para-container h5 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #63e6be;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.content span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.content .label {
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.content .value {
+  font-weight: 400;
+  color: #2c3e50;
 }

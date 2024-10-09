@@ -1,0 +1,28 @@
+/* Skills.css */
+
+.skills-container {
+  display: flex; 
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.skills-container .card {
+  width: 15rem; /* Fixed width for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills-container .card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.skills-container .card-img-top {
+  height: 10rem; /* Fixed height for images */
+  border-radius: 10px 10px 0 0; /* Rounded corners for images */
+}
+
+.skills-container .card-body {
+  text-align: center; /* Center title text */
+}

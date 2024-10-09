@@ -1,8 +1,10 @@
+import "./Skills.css"; // Make sure to include this CSS file
+
 const Skills = ({ imageUrl, text }) => {
   return (
     <>
       <div
-        class="card"
+        className="card"
         style={{
           width: "15rem",
           margin: "20px",
@@ -11,12 +13,12 @@ const Skills = ({ imageUrl, text }) => {
       >
         <img
           src={imageUrl}
-          class="card-img-top"
+          className="card-img-top"
           alt="..."
           style={{ height: "10rem" }}
         />
-        <div class="card-body">
-          <h5 class="card-title">{text}</h5>
+        <div className="card-body">
+          <h5 className="card-title">{text}</h5>
         </div>
       </div>
     </>

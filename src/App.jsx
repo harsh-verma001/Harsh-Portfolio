@@ -14,19 +14,19 @@ function App() {
 
   const ProjectCardContent = [
     {
-      imageUrl: "../public/frontend/react.png",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium consectetur aliquam quia minima impedit repellat laboriosam corporis, in corrupti ad maiores ut placeat eaque est inventore quaerat alias quidem earum debitis. Accusantium similique illo velit deleniti perferendis placeat magnam nisi perspiciatis nemo ex. Repellat animi deleniti reprehenderit numquam fugit explicabo.",
+      imageUrl: "background/Amazon.webp",
+      text: "hi this is harsh kumar verma.",
     },
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
+      imageUrl: "background/spotify2.png",
       text: "hi this is harsh kumar verma",
     },
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
+      imageUrl: "background/weather2.jpg",
       text: "hi this is harsh kumar verma",
     },
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
+      imageUrl: "background/calculator.jpg",
       text: "hi this is harsh kumar verma",
     },
     {
@@ -60,20 +60,16 @@ function App() {
 
   const backEndSkills = [
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
-      text: "HTML CSS",
+      imageUrl: "backend/mysql2.png",
+      text: "MySQL",
     },
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
-      text: "Bootstrap",
+      imageUrl: "backend/springboot2.jpg",
+      text: "Spring Boot",
     },
     {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
-      text: "JavaScript",
-    },
-    {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
-      text: "React",
+      imageUrl: "backend/java.webp",
+      text: "Java",
     },
   ];
 
@@ -128,7 +124,7 @@ function App() {
           ))}
         </div>
         <div>
-          <h4>front-end</h4>
+          <h4>Front-end</h4>
           <div className="frontEnd">
             {frontEndSkills.map((item, index) => (
               <Skills key={index} imageUrl={item.imageUrl} text={item.text} />
@@ -137,7 +133,7 @@ function App() {
         </div>
 
         <div>
-          <h4>back-end</h4>
+          <h4>Back-end</h4>
           <div className="backEnd">
             {backEndSkills.map((item, index) => (
               <Skills key={index} imageUrl={item.imageUrl} text={item.text} />

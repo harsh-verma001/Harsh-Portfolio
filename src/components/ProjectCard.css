@@ -1,53 +1,79 @@
-.super-container{
-  margin: 10px 0px;
-  display: flex;
-  flex-wrap: wrap; /* To ensure containers wrap onto the next line */
-  justify-content: space-between; /* Distribute space evenly */
-}
-.container{
-  display: flex;
-  flex-direction: row; /* Align children (image and paragraph) horizontally */
-  width: 32%;
-  height: 22vh;
-  border: 2px solid rgb(220, 248, 84);
-  border-radius: 10px;
-  margin-bottom: 20px; /* Space between rows */
-  box-sizing: border-box; /* To ensure padding and border are included in width */
-}
 
-.sub-container{
-  width: 40%; /* Left side for the image */
+
+
+
+/* ProjectCard.css */
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  padding: 10px; /* Padding for inner spacing */
-  border: 2px solid rgb(146, 247, 152);
-  border-radius: 10px;
-  margin: 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #63e6be, #209cff);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.img-container{
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sub-container {
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.link-container{
-  margin-top: auto;
+.sub-container img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.para-container{
-  width: 60%;
-  padding: 10px;
+.sub-container img:hover {
+  transform: scale(1.1);
+}
+
+.link-container {
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #63e6be;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align to the top */
-  text-align: left;
-  max-height: 100%; /* Adjust to allow for scrolling */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #4cc8a0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn svg {
+  margin-left: 8px;
+  fill: #fff;
+}
+
+.para-container {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
