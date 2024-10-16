@@ -10,7 +10,9 @@ function Nav() {
             alt="Cool H Symbol"
           />
         </div>
-        <div style={{ color: "white", fontSize: 25 }}>Harsh Kumar Verma</div>
+        <div className="name">
+          <h3>Harsh Kumar Verma</h3>
+        </div>
       </nav>
     </>
   );

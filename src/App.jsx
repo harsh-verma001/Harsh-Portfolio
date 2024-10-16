@@ -14,27 +14,28 @@ function App() {
 
   const ProjectCardContent = [
     {
-      imageUrl: "background/Amazon.webp",
+      imageUrl: "background/chat.webp",
+      text: "hi this is harsh kumar verma",
+    },
+    {
+      imageUrl: "background/Amazon.png",
       text: "hi this is harsh kumar verma.",
     },
     {
-      imageUrl: "background/spotify2.png",
+      imageUrl: "background/spotify.jpg",
       text: "hi this is harsh kumar verma",
     },
+    {
+      imageUrl: "background/project-2.jpg",
+      text: "hi this is harsh kumar verma",
+    },
+
     {
       imageUrl: "background/weather2.jpg",
       text: "hi this is harsh kumar verma",
     },
     {
       imageUrl: "background/calculator.jpg",
-      text: "hi this is harsh kumar verma",
-    },
-    {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
-      text: "hi this is harsh kumar verma",
-    },
-    {
-      imageUrl: "https://via.placeholder.com/50x50.png?text=H",
       text: "hi this is harsh kumar verma",
     },
   ];
@@ -70,6 +71,10 @@ function App() {
     {
       imageUrl: "backend/java.webp",
       text: "Java",
+    },
+    {
+      imageUrl: "backend/firebase.png",
+      text: "firebase",
     },
   ];
 

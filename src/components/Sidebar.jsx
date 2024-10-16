@@ -3,7 +3,7 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <>
-      <div class="sidebar bg-dark ">
+      <div class="sidebar ">
         <ul>
           <li>
             <svg
